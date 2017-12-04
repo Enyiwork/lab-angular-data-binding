@@ -1,3 +1,12 @@
-<p>
-  food-list works!
-</p>
+<h2>Food List</h2>
+
+<div class="flex-continer">
+  <ul>
+    <li *ngFor="let oneFood of listOfFood">
+      <h2> {{ oneFood.name        }} </h2>
+      <h4>  {{ oneFood.calories    }} </h4>
+      <h4>  {{ oneFood.quantity    }} </h4>
+      <img [src]="oneFood.image" />
+    </li>
+  </ul>
+</div>
