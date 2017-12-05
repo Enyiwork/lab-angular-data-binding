@@ -2,12 +2,13 @@
 
 <label for="search-input">Search by name</label>
 <input id="search-input" type="text" placeholder="Search Here..."
-    [(ngModel)]="foods"/>
+[(ngModel)]="foods"/>
+<br />
 
 <div class="flex-continer">
   <ul>
     <li *ngFor="let oneFood of (listOfFood | search:foods)">
-      <h2> {{ oneFood.name         }} </h2>
+      <h2>  {{ oneFood.name        }} </h2>
       <h4>  {{ oneFood.calories    }} </h4>
       <h4>  {{ oneFood.quantity    }} </h4>
       <img [src]="oneFood.image"   />

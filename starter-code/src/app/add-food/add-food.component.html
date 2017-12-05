@@ -1,0 +1,22 @@
+<h2>ADD FOOD</h2>
+
+<div class="new-contact-form">
+
+  <label for="foods-name">Name</label>
+  <input type="text" [(ngModel)]="newFood.name">
+  <br />
+
+  <label for="foods-calories">Calories</label>
+  <input type="text" [(ngModel)]="newFood.calories">
+  <br />
+
+  <label for="foods-quantity">Quantity</label>
+  <input type="text" [(ngModel)]="newFood.quantity">
+  <br />
+
+  <label for="foods-image">ImageUrl</label>
+  <input type="text" [(ngModel)]="newFood.image">
+  <br />
+
+  <button (click)="addFood()">Submit New Contact</button>
+</div>
